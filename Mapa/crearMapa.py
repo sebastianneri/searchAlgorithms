@@ -23,9 +23,6 @@ def crearMapa(n, m, obstacles_count, lakes_count, show_levels=True):
     used_space = []
     count_used_places = 0
     rover = "Q"
-    ubi_rover = 0
-    print(f"\nNave: {rover}\nObstáculos: {obstacle}\nLagos: {lake}\n")
-
     #---------- Creación del mapa con los bordes -----------
 
     for i in range(n):
