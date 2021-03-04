@@ -102,11 +102,9 @@ class Rover(SearchProblem):
         state = self.getCoors(state)
         return np.abs(self.closest[0] - np.array(state)[0]) + np.abs(self.closest[1] - np.array(state)[1])
 
-"""   
-# ------ Euclidean Distance ------
-    def heuristic(self, state):
-        state = self.getCoors(state)
-        return self.getDistanceFromLake(state)
-
-
+"""
+    # ------ Euclidean Distance ------
+        def heuristic(self, state):
+            state = self.getCoors(state)
+            return self.getDistanceFromLake(state)
 """
