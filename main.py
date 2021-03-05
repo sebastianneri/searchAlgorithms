@@ -6,8 +6,8 @@ from SituacionProblema.SituacionProblema import Rover
 if __name__ == '__main__':
     while True:
         try:
-            print_map = False
-            mapa = crearMapa(100, 100, 200, 10, True)
+            print_map = True
+            mapa = crearMapa(20, 30, 20, 1, True)
             problema = Rover(mapa)
             if print_map:
                 print("------------------------------------------- Mapa Inicial -------------------------------------------")
