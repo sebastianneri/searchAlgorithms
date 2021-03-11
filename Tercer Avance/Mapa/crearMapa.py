@@ -22,7 +22,7 @@ def crearMapa(n, m, obstacles_count, lakes_count, show_levels=True):
     levels = ["0", "1", "2", "3", "4", "5"]
     used_space = []
     count_used_places = 0
-    rover = "Q"
+    rover = "\033[01m\033[32mQ\033[0m"
     #---------- Creación del mapa con los bordes -----------
 
     for i in range(n):
@@ -50,6 +50,7 @@ def crearMapa(n, m, obstacles_count, lakes_count, show_levels=True):
         elif i < obstacles_count + lakes_count and i >= lakes_count:
             map = map[:random_place] + obstacle + map[random_place + 1:]
         else:
+            
             map = map[:random_place] + rover + map[random_place + 1:]
         used_space.append(random_place)
 
