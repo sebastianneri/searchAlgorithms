@@ -24,7 +24,7 @@ if __name__ == '__main__':
             # output = simulated_annealing(problema,_exp_schedule)
             print('\nPath to the solution:')
             for item,state in output.path():
-                print(mapa[:state]+'?'+mapa[state+1:])
+                print(mapa[:state]+f'\033[01m\033[93m{mapa[state]}\033[0m'+mapa[state+1:])
                 print(f"Valor = {problema.value(state)}")
                 
             problema = Rover(mapa,used_space, 5)
@@ -35,7 +35,7 @@ if __name__ == '__main__':
             # output = simulated_annealing(problema,_exp_schedule)
             print('\nPath to the solution:')
             for item,state in output.path():
-                print(mapa[:state]+'?'+mapa[state+1:])
+                print(mapa[:state]+f'\033[01m\033[93m{mapa[state]}\033[0m'+mapa[state+1:])
                 print(f"Valor = {problema.value(state)}")
             break
         except:
