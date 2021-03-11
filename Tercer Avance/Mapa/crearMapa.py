@@ -31,7 +31,7 @@ def crearMapa(n, m, obstacles_count, lakes_count, show_levels=True):
                 map += "#"
                 used_space.append(count_used_places)
             elif show_levels:
-                map += np.random.choice(levels, p=[.19,.19,.19,.19,.19,.05])
+                map += np.random.choice(levels)
             else:
                 map += " "
             count_used_places += 1
